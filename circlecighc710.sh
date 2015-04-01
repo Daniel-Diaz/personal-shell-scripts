@@ -14,7 +14,7 @@ mkdir ghc-script
 cd ghc-script
 # Get the compiler
 wget https://www.haskell.org/ghc/dist/7.10.1/ghc-7.10.1-x86_64-unknown-linux-deb7.tar.bz2
-tar jxvf ghc-7.10.1-x86_64-unknown-linux-deb7.tar.bz2
+tar jxf ghc-7.10.1-x86_64-unknown-linux-deb7.tar.bz2
 cd ghc-7.10.1
 # Install it
 cp /usr/lib/x86_64-linux-gnu/libgmp.so.10 ghc-7.10.1/libgmp.so.10
@@ -30,7 +30,7 @@ sudo cp /usr/local/bin/haddock /opt/ghc/7.8.3/bin/haddock
 ghc --version
 # Cabal installation
 wget http://hackage.haskell.org/package/cabal-install-1.22.2.0/cabal-install-1.22.2.0.tar.gz
-tar zxvf cabal-install-1.22.2.0.tar.gz
+tar zxf cabal-install-1.22.2.0.tar.gz
 cd cabal-install-1.22.2.0
 sh bootstrap.sh
 sudo cp /home/ubuntu/.cabal/bin/cabal /opt/cabal/1.20/bin/cabal
