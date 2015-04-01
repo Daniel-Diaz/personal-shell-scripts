@@ -17,7 +17,7 @@ wget https://www.haskell.org/ghc/dist/7.10.1/ghc-7.10.1-x86_64-unknown-linux-deb
 tar jxf ghc-7.10.1-x86_64-unknown-linux-deb7.tar.bz2
 cd ghc-7.10.1
 # Install it
-cp /usr/lib/x86_64-linux-gnu/libgmp.so.10 ghc-7.10.1/libgmp.so.10
+cp /usr/lib/x86_64-linux-gnu/libgmp.so.10 libgmp.so.10
 ./configure
 sudo make install
 # Exit the GHC directory
