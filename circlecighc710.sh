@@ -29,9 +29,10 @@ sudo cp /usr/local/bin/haddock /opt/ghc/7.8.3/bin/haddock
 # Check GHC version
 ghc --version
 # Cabal installation
-wget http://hackage.haskell.org/package/cabal-install-1.22.2.0/cabal-install-1.22.2.0.tar.gz
-tar zxf cabal-install-1.22.2.0.tar.gz
-cd cabal-install-1.22.2.0
+cabalversion="1.22.4.0"
+wget http://hackage.haskell.org/package/cabal-install-$cabalversion/cabal-install-$cabalversion.tar.gz
+tar zxf cabal-install-$cabalversion.tar.gz
+cd cabal-install-$cabalversion
 sh bootstrap.sh
 sudo cp /home/ubuntu/.cabal/bin/cabal /opt/cabal/1.20/bin/cabal
 # Check Cabal version
